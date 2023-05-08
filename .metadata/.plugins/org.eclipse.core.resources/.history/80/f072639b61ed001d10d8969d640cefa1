@@ -1,0 +1,45 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX43 {
+
+	public static void main(String[] args) {
+		Scanner ns = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro numero do triangulo");
+		int a = ns.nextInt();
+		System.out.println("Digite o segundo numero do triangulo");
+		int b = ns.nextInt();
+		System.out.println("Digite o terceiro numero do triangulo");
+		int c = ns.nextInt();
+		
+		if((a<b+c)&&(b<a+c)&&(c<a+b)){
+			if((a==b)&&(b==c)) {
+				System.out.println("Triangulo Equilatero");
+			}else if((a==b)||(b==c)||(a==c)) {
+				System.out.println("Triangulo Isosceles");
+			}else {
+				System.out.println("Triangulo Escaleno");
+			}
+		}else {
+			System.out.println("Nao foi possivel formar um triangulo");
+		}
+		ns.close();
+	}
+	
+	/*
+	 			   TESTES PRATICOS
+   ------------------------------------------------
+   | A | B | C |            RESULTADOS            |
+   ------------------------------------------------
+   | 1 | 2 | 3 |      		NAO FORMA              |
+   | 3 | 4 | 5 |             ESCALENO             |
+   | 2 | 2 | 4 |      		NAO FORMA              |
+   | 4 | 4 | 4 |             EQUILATERO           |
+   | 5 | 3 | 3 |             ISOSCELES            |
+   ------------------------------------------------
+	
+	*/
+
+}

@@ -1,0 +1,45 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX40 {
+
+	public static void main(String[] args) {
+		Scanner ns = new Scanner(System.in);
+		String nome=new String();
+		int quantidade=ns.nextInt();
+		double preco=ns.nextDouble(),desconto;
+		nome = ns.next();
+		
+		System.out.println("Digite o nome do produto adquirido:");
+		ns.nextLine();
+		System.out.println("Digite a quantidade comprada:");
+		ns.nextInt();
+		System.out.println("Digite o preço unitário:");
+		ns.nextDouble();
+		
+		if(quantidade <= 5) {
+			desconto = preco*2/100;
+			preco = preco-desconto;
+		}else if(quantidade > 5 && quantidade<=10) {
+			desconto = preco*3/100;
+			preco = preco-desconto;
+		}else{
+			desconto = preco*5/100;
+			preco = preco-desconto;
+		}
+		
+		System.out.println("Você comprou " + quantidade + " unidades de: " + nome + " e pagou: R$" + preco + " por isso");
+		ns.close();
+	}
+
+}
+
+
+
+
+
+
+System.out.println("String:"+s);
+System.out.println("Double: "+y); 
+System.out.println("Int: "+x); 

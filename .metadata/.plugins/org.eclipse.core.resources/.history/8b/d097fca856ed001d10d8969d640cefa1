@@ -1,0 +1,46 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX41 {
+
+	public static void main(String[] args) {
+		Scanner ns = new Scanner(System.in);
+		
+		System.out.println("Digite a primeira nota:");
+		double nota1 = ns.nextInt();
+		
+		System.out.println("Digite a segunda nota:");
+		double nota2 = ns.nextInt();
+		
+		System.out.println("Digite a terceira nota:");
+		double nota3 = ns.nextInt();
+		
+		double mediaAproveitamento,mediaExercicios=0;
+		
+		mediaAproveitamento = nota1+nota2*2+nota3*3+mediaExercicios/7;
+		
+		if(mediaAproveitamento >= 9) {
+			System.out.println("Conteito A");
+			System.out.printf("Com a média de %.2f",mediaAproveitamento);
+		}else if(mediaAproveitamento >= 7.5) {
+			System.out.println("Conteito B");
+			System.out.printf("Com a média de %.2f",mediaAproveitamento);
+		}else if(mediaAproveitamento >= 6) {
+			System.out.println("Conteito C");
+			System.out.printf("Com a média de %.2f",mediaAproveitamento);
+		}else {
+			System.out.println("Conteito D");
+			System.out.printf("Com a média de %.2f",mediaAproveitamento);
+		}
+		
+		
+		
+		
+		
+		
+		
+		ns.close();
+	}
+
+}

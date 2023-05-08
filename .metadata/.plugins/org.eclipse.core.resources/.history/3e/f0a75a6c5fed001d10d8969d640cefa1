@@ -1,0 +1,30 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX43 {
+
+	public static void main(String[] args) {
+		Scanner ns = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro número do triângulo");
+		int a = ns.nextInt();
+		System.out.println("Digite o segundo número do triângulo");
+		int b = ns.nextInt();
+		System.out.println("Digite o terceiro número do triângulo");
+		int c = ns.nextInt();
+		
+		if((a<b+c)&&(b<a+c)&&(c<a+b)){
+			if((a==b)&&(b==c)) {
+				System.out.println("Triângulo Equilátero");
+			}else if((a==b)||(b==c)||(a==c)) {
+				System.out.println("Triângulo Isósceles");
+			}else {
+				System.out.println("Triângulo Escaleno");
+			}
+		}else {
+			System.out.println("Não foi possível formar um triângulo");
+		}
+	}
+
+}

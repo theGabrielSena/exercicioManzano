@@ -1,0 +1,39 @@
+package logicaProgramacaoFaccat;
+
+import javax.swing.JOptionPane;
+
+public class EX49 {
+
+	private static int ope;
+
+	public static void main(String[] args) {
+		
+		double nota1,nota2,media;
+		String op[]= {"Sim","Não"};
+		
+		do {
+			
+		 nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da primeira avaliacao: "));
+		
+		 nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da segunda avaliacao: "));
+		
+		while((nota1 < 0 || nota1 > 10)||(nota2 < 0 || nota2 > 10)) {
+			 nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da primeira avaliacao: "));
+			 
+			 nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da segunda avaliacao: "));
+        }
+		
+		 media=(nota1*2+nota2*3)/5;
+		 
+		 JOptionPane.showMessageDialog(null,"A média foi de: "+media);
+		 
+		 int ope = JOptionPane.showOptionDialog(null,"Deseja realizar um novo cálculo? " , "MENU",
+					0, JOptionPane.QUESTION_MESSAGE, null, op, op);
+		 if(ope==1) {
+			 System.exit(0);
+		 }
+		 
+		} while(ope==0);
+	}
+
+}

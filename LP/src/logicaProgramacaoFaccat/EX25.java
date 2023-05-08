@@ -20,8 +20,10 @@ public class EX25 {
 		saldoAtual = saldo-debito+credito;
 		
 		if(saldoAtual>=0) {
+			System.out.printf("Olá, você possui a conta de número: %.0f\n",numeroConta);
 			System.out.println("Seu saldo é positivo e você possui R$: "+saldoAtual+ " na conta");
 		}else {
+			System.out.println("Olá, você possui a conta de número: "+numeroConta+" e");
 			System.out.println("Seu saldo é negativo e você está devendo R$: "+saldoAtual);
 		}
 		ns.close();

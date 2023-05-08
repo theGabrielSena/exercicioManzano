@@ -1,0 +1,36 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX40GPT {
+
+	public static void main(String[] args) {
+		Scanner ns = new Scanner(System.in);
+		
+		System.out.print("Digite o nome do produto adquirido:");
+		String nome=ns.next();
+		
+		System.out.print("Digite a quantidade comprada:");
+		int quantidade=ns.nextInt();
+		
+		System.out.print("Digite o preço unitário:");
+		double preco = ns.nextDouble();
+		
+		double desconto;
+		
+		if(quantidade <= 5) {
+			desconto = preco*2/100;
+			preco = preco-desconto;
+		}else if(quantidade > 5 && quantidade<=10) {
+			desconto = preco*3/100;
+			preco = preco-desconto;
+		}else{
+			desconto = preco*5/100;
+			preco = preco-desconto;
+		}
+		
+		System.out.println("Você comprou " + quantidade + " unidades de: " + nome + " e pagou: R$" + preco + " por isso");
+		ns.close();
+	}
+
+}

@@ -1,0 +1,36 @@
+package logicaProgramacaoFaccat;
+
+import javax.swing.JOptionPane;
+
+
+public class EX42 {
+
+	public static void main(String[] args) {
+		
+		int idFuncionario = Integer.parseInt(JOptionPane.showInputDialog("Digite o seu código na empresa:"));
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de nascimento:"));
+		int tempoTrabalho = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano em que ingressou na empresa: "));
+		int anoAtual = 2023;
+		String op[]= {"Requerer Aposentadoria","Não Requerer"};
+		
+		idade = anoAtual-idade;
+		tempoTrabalho = anoAtual-tempoTrabalho;
+		
+		if(idade>=65) {
+			int ope = JOptionPane.showOptionDialog(null,"Olá, funcionário de código "+ idFuncionario + "\nFelizmente, você já pode solicitar sua aposentadoria por já ter: "+ idade +" anos" , "MENU",
+					0, JOptionPane.QUESTION_MESSAGE, null, op, op);
+			if(ope==0) {
+				JOptionPane.showMessageDialog(null,"Muito bem, você está na fila para se aposentar");
+			}else {
+				JOptionPane.showMessageDialog(null,"Entendido, volte novamente quanto resolver solicitar");
+			}
+		}else if(tempoTrabalho>=30) {
+			
+		}else if(idade>60 && tempoTrabalho>25) {
+			
+		}else {
+			JOptionPane.showMessageDialog(null,"Você ainda não pode se aposentar");
+		}
+	}
+
+}

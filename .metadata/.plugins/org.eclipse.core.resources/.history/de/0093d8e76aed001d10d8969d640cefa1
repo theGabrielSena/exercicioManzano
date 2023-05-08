@@ -1,0 +1,11 @@
+package logicaProgramacaoFaccat;
+
+import javax.JOptionPane;
+
+public class EX49 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

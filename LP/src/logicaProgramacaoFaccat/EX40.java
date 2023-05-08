@@ -4,32 +4,41 @@ import java.util.Scanner;
 
 public class EX40 {
 
-	public static void main(String[] args) {
-		Scanner ns = new Scanner(System.in);
-		String nome;
-		int quantidade = 0;
-		double preco = 0,desconto;
-		
-		System.out.println("Digite o nome do produto adquirido:");
-		ns.next();
-		System.out.println("Digite a quantidade comprada:");
-		ns.nextInt();
-		System.out.println("Digite o preço unitário:");
-		ns.nextDouble();
-		
-		if(quantidade <= 5) {
-			desconto = preco*2/100;
-			preco = preco-desconto;
-		}else if(quantidade > 5 && quantidade<=10) {
-			desconto = preco*3/100;
-			preco = preco-desconto;
-		}else{
-			desconto = preco*5/100;
-			preco = preco-desconto;
-		}
-		
-		System.out.println("Você comprou " + quantidade + " unidades de: " + nome + " e pagou: R$" + preco + " por isso");
-		ns.close();
-	}
+    public static void main(String[] args) {
+        Scanner ns = new Scanner(System.in);
+
+        System.out.print("Informe a descricao do produto: ");
+        String descricao = ns.nextLine();
+
+        System.out.print("Informe a quantidade adquirida: ");
+        int quantidade = ns.nextInt();
+
+        System.out.print("Informe o preco unitario: R$ ");
+        double precoUnitario = ns.nextDouble();
+
+        double total = quantidade * precoUnitario;
+        double desconto = 0.0;
+
+        if (quantidade <= 5) {
+            desconto = total*2/100;
+        } else if (quantidade <= 10) {
+            desconto = total*3/100;
+        } else {
+            desconto = total*5/100;
+        }
+
+        double totalAPagar = total - desconto;
+
+        System.out.println("-----------------------------------");
+        System.out.println("Descricao do produto: " + descricao);
+        System.out.println("Quantidade adquirida: " + quantidade);
+        System.out.printf("Preco unitario: R$ %.2f\n", precoUnitario);
+        System.out.printf("Total: R$ %.2f\n", total);
+        System.out.printf("Desconto: R$ %.2f\n", desconto);
+        System.out.printf("Total a pagar: R$ %.2f\n", totalAPagar);
+
+        ns.close();
+
+    }
 
 }

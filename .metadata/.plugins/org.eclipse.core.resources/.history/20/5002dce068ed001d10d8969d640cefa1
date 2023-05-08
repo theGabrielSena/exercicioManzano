@@ -1,0 +1,22 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX48 {
+	
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        double nota1,nota2,media;
+	        
+	        System.out.println("Digite a nota da primeira avaliacao");
+	        nota1=sc.nextDouble();
+	        System.out.println("Digite a nota da segunda avaliacao");
+	        nota2=sc.nextDouble();
+	        
+	        
+	        
+	        
+	        sc.close();
+	}
+
+}

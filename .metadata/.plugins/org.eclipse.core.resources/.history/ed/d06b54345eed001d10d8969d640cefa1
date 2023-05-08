@@ -1,0 +1,14 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX43 {
+
+	public static void main(String[] args) {
+		Scanner ns = new Scanner(System.in);
+		
+		int a=ns.nextInt();System.out.println("AAA");
+		
+	}
+
+}
