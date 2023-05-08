@@ -24,11 +24,11 @@ public class EX23 {
 		
 		if(ope == 0) {
 			pesoIdeal = (72.1 * altura) - 58;
-			System.out.printf("Olá, "+nome+" seu peso ideal seria: %.2f",pesoIdeal);
+			System.out.printf("Olá,"+nome+" seu peso ideal seria: "+pesoIdeal);
 		}
 		if(ope == 1) {
 			pesoIdeal = (62.1 * altura) - 44.7;
-			System.out.printf("Olá,"+nome+" seu peso ideal seria: %.2f",pesoIdeal);
+			System.out.printf("Olá,"+nome+" seu peso ideal seria: "+pesoIdeal);
 		}
 		ns.close();
 	}

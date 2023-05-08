@@ -26,22 +26,22 @@ public class L02C {
 		
 		totalEleitores = votosV+votosN+votosB;
 		
-		percentualValidos = (100*votosV)/totalEleitores;
+		percentualValidos = totalEleitores-votosV;
 		
-		percentualValidosA = (100*candidatoA)/totalEleitores;
-		percentualValidosB = (100*candidatoB)/totalEleitores;
-		percentualValidosC = (100*candidatoC)/totalEleitores;
+		percentualValidosA = totalEleitores-candidatoA;
+		percentualValidosB = totalEleitores-candidatoB;
+		percentualValidosC = totalEleitores-candidatoC;
 		
-		percentualNulos = (100*votosN)/totalEleitores;
-		percentualBrancos = (100*votosB)/totalEleitores;
+		percentualNulos = totalEleitores-votosN;
+		percentualBrancos = totalEleitores-votosB;
 				
-		System.out.println("A quantidade de eleitores foi de: " + totalEleitores + " pessoas");
-		System.out.println("O percentual de votos válidos em relação à quantidade de eleitores: " + percentualValidos + "%");
-		System.out.println("O percentual de votos  válidos  do  candidato  A  em  relação  à  quantidade  de eleitores: " + percentualValidosA + "%");
-		System.out.println("O percentual de votos  válidos  do  candidato  B  em  relação  à  quantidade  de eleitores: " + percentualValidosB + "%");
-		System.out.println("O percentual de votos  válidos  do  candidato  C  em  relação  à  quantidade  de eleitores: " + percentualValidosC + "%");
-		System.out.println("O percentual correspondente de votos nulos em relação à quantidade de eleitores: " + percentualNulos + "%");
-		System.out.println("O percentual correspondente de votos em branco em relação à quantidade de eleitores: " + percentualBrancos + "%");
+		System.out.println("A quantidade de eleitores foi de: " + totalEleitores);
+		System.out.println("O percentual de votos válidos em relação à quantidade de eleitores: " + percentualValidos);
+		System.out.println("O percentual de votos  válidos  do  candidato  A  em  relação  à  quantidade  de eleitores: " + percentualValidosA);
+		System.out.println("O percentual de votos  válidos  do  candidato  B  em  relação  à  quantidade  de eleitores: " + percentualValidosB);
+		System.out.println("O percentual de votos  válidos  do  candidato  C  em  relação  à  quantidade  de eleitores: " + percentualValidosC);
+		System.out.println("O percentual correspondente de votos nulos em relação à quantidade de eleitores: " + percentualNulos);
+		System.out.println("O percentual correspondente de votos em branco em relação à quantidade de eleitores: " + percentualBrancos);
 		ns.close();
 		}
 }

@@ -6,7 +6,7 @@ public class EX36 {
 
 	public static void main(String[] args) {
 		Scanner ns = new Scanner(System.in);
-		int idadeHomem1,idadeHomem2,idadeMulher1,idadeMulher2,soma;
+		int idadeHomem1,idadeHomem2,idadeMulher1,idadeMulher2,soma,produto = 0;
 		
 		System.out.println("Digite a idade do primeiro homem:");
 		idadeHomem1 = ns.nextInt();
@@ -18,23 +18,25 @@ public class EX36 {
 		idadeMulher2 = ns.nextInt();
 		
 		
-		if(idadeHomem1>idadeHomem2 && idadeHomem1>idadeMulher2) {
-			soma = idadeHomem1 + idadeMulher1;
-			System.out.println("O maior número é: "+soma);
-		}
-		else if(idadeHomem1>idadeHomem2 && idadeHomem1>idadeMulher1) {
+		if(idadeHomem1>idadeHomem2 || idadeMulher1>idadeMulher2) {
 			soma = idadeHomem1 + idadeMulher2;
+			produto = idadeHomem2 * idadeMulher1;
 			System.out.println("O maior número é: "+soma);
+			System.out.println("O produto é: "+produto);
 		}
-		else if(idadeHomem2>idadeHomem1 && idadeHomem2>idadeMulher2 ) {
+		else {
 			soma = idadeHomem2 + idadeMulher1;
+			produto = idadeHomem1 * idadeMulher2;
 			System.out.println("O maior número é: "+soma);
-		}
-		else if(idadeHomem2>idadeHomem1 && idadeHomem2>idadeMulher1) {
-			soma = idadeHomem2 + idadeMulher2;
-			System.out.println("O maior número é: "+soma);
+			System.out.println("O produto é: "+produto);
 		}
 		ns.close();
 	}
 
 }
+
+
+/*Escreva  um  algoritmo  que  leia  as  idades  de  2  homens  e  de  2  mulheres (considere  que  as
+idades dos  homens  serão  sempre  diferentes  entre  si,  bem  como  as  das  mulheres).  Calcule
+e  escreva  a  soma das  idades  do  homem  mais  velho  com  a  mulher  mais  nova,  e  o  produto  das  idades 
+do  homem  mais novo com a mulher mais velha. */
