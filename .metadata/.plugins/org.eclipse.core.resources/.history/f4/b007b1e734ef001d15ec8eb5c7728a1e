@@ -1,0 +1,12 @@
+package logicaProgramacaoFaccat;
+
+public class EX57 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+//Reescreva o exercício 50 utilizando a estrutura REPITA e um CONTADOR.

@@ -27,5 +27,6 @@ public class EX46 {
 	    System.out.printf("O resultado da divisao: %.2f", resultado);
 	    sc.close();
 	}
-
 }
+
+//Acrescentar  uma  mensagem  de 'VALOR  INVÁLIDO'  no  exercício  [44]  caso  o  segundo  valor informado seja ZERO. 

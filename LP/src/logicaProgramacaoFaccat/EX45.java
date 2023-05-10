@@ -27,3 +27,5 @@ public class EX45 {
 	        sc.close();
 	    }
 	}
+
+//Reescreva o exercício anterior utilizando a estrutura ENQUANTO.

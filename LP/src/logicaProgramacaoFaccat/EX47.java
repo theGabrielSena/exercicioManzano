@@ -34,3 +34,5 @@ public class EX47 {
 	        sc.close();
 	    }
 	}
+
+//Acrescentar  uma  mensagem  de 'VALOR  INVÁLIDO'  no  exercício  [45]  caso  o  segundo  valor informado seja ZERO. 

@@ -1,0 +1,25 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX54 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um número");
+		int n = sc.nextInt();
+		
+		do{
+			System.out.println("Digite um número");
+			int n2 = sc.nextInt();
+		}while(n<0);
+		
+		for (int i = 1; i <= n; i++) {
+			System.out.println(i);
+		}
+		sc.close();
+		
+	}
+
+}

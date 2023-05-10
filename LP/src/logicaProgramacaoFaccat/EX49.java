@@ -35,5 +35,9 @@ public class EX49 {
 		 
 		} while(ope==0);
 	}
-
 }
+
+/*Acrescente  uma  mensagem 'NOVO  CÁLCULO  (S/N)?'ao  final  do  exercício  [48].  
+  Se  for respondido 'S' deve retornar e executar um novo cálculo,
+  caso contrário deverá encerrar o algoritmo. 
+*/

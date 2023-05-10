@@ -1,0 +1,16 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Iterator;
+
+public class EX50 {
+
+	public static void main(String[] args) {
+		int num1;
+		
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(i);
+			
+		}
+	}
+
+}

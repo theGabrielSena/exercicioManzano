@@ -25,8 +25,11 @@ public class EX48 {
 	        
 	        System.out.printf("A media foi de: %.2f\n",media);
 	        
-	        
 	        sc.close();
 	}
-
 }
+
+/*Escreva  um  algoritmo  para  ler  as  notas  da  1a.  e  2a.
+  avaliações  de um  aluno,  calcule  e  imprima  a média (simples)
+  desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota.
+*/
