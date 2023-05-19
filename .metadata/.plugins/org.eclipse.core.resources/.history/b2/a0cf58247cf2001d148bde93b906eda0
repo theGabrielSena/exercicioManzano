@@ -1,0 +1,30 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX62 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int cont = 0;
+		double media;
+		
+		System.out.println("Digite o numero de alunos na sala");
+		int alunos = sc.nextInt();
+		do {
+		System.out.println("Digite a nota de cada um deles para realizar o calculo aritmetico");
+		for (int i = 0;i < alunos;i++) {
+			int num = sc.nextInt();
+			cont += num;
+		}
+		
+		media = cont/10;
+		}while(media<0||media>10);
+		
+		System.out.println("A media: "+media);
+		
+		sc.close();
+	}
+
+}

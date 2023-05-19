@@ -1,0 +1,55 @@
+package logicaProgramacaoFaccat;
+
+import java.util.Scanner;
+
+public class EX59 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int soma=0;
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int n3 = sc.nextInt();
+		int n4 = sc.nextInt();
+		int n5 = sc.nextInt();
+		int n6 = sc.nextInt();
+		int n7 = sc.nextInt();
+		int n8 = sc.nextInt();
+		int n9 = sc.nextInt();
+		int n10 = sc.nextInt();
+		
+		if(n1<0) {
+			soma++;
+		}
+		if(n2<0) {
+			soma++;
+		}
+		if(n3<0) {
+			soma++;
+		}
+		if(n4<0) {
+			soma++;
+		}
+		if(n5<0) {
+			soma++;
+		}
+		if(n6<0) {
+			soma++;
+		}
+		if(n7<0) {
+			soma++;
+		}
+		if(n8<0) {
+			soma++;
+		}
+		if(n9<0) {
+			soma++;
+		}
+		if(n10<0) {
+			soma++;
+		}
+		System.out.println(soma+" dos numeros são negativos");
+	}
+
+}

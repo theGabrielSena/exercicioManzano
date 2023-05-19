@@ -1,0 +1,11 @@
+package logicaProgramacaoFaccat;
+
+public class EX61 {
+
+	public static void main(String[] args) {
+		double media;
+		
+		
+	}
+
+}
